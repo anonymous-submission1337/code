@@ -10,8 +10,10 @@ import sys
 
 
 def get_str_class(array):
-
-    if isinstance(array[0], str):
+    if len(array)>8:
+        array=np.fromstring(array, dtype=int, sep=' ')
+        converted_class = array
+    elif isinstance(array[0], str):
         converted_class = []
         for i in range(len(array)):
             converted_class.append(int(array[i]))
@@ -38,7 +40,6 @@ def main(args):
     args_in = parser.parse_args(args)
     pkl_dataset = args_in.pkl_dataset
     rand_mul = args_in.ac_rand_mul
-    swaps = args_in.noac_swaps
 
     print("Building dataset with action random factor = "+str(rand_mul))
     random.seed(1)
