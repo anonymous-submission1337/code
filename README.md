@@ -58,7 +58,7 @@ python run_shelf_arrangment_pca_siam_simntx.py
 
 Box manipulation task:
 ```
-python run_shelf_arrangment_pca_siam_simntx.py
+python run_box_manipulation_pca_siam_simntx.py
 ```
 
 ### Train AE; PC-AE; VAE; PC-VAE
@@ -83,7 +83,7 @@ python produce_recon_models_encodings.py
 
 ### Results
 
-The representations are saved in the model folder togheter with the t-SNE plots:
+The representations are saved in the model folder together with the t-SNE plots:
 
 ![plots example](box_stacking.png)
 
