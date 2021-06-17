@@ -48,17 +48,17 @@ python preprocess_dataset/augment_dataset.py --pkl_dataset='datasets/box_manipul
 Box stacking task:
 
 ```
-python run_box_stacking_pca_siam_simclear.py
+python run_box_stacking_pca_siam_simntx.py
 ```
 
 Shelf arranging task:
 ```
-python run_shelf_arrangment_pca_siam_simclear.py
+python run_shelf_arrangment_pca_siam_simntx.py
 ```
 
 Box manipulation task:
 ```
-python run_shelf_arrangment_pca_siam_simclear.py
+python run_shelf_arrangment_pca_siam_simntx.py
 ```
 
 ### Train AE; PC-AE; VAE; PC-VAE
